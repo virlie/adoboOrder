@@ -1,8 +1,8 @@
 // NOTE: Begins Business Logic.
 
 function adobo(size,addDiffMeats) {
-  this.size = size;
-  this.addDiffMeat = addDiffMeats;
+  this.adoboSize = size;
+  this.personalAdobo = personalAdobo;
   }
 
 adobo.prototype.cost = function() {
@@ -12,7 +12,7 @@ adobo.prototype.cost = function() {
      this.price = 15;
   }else {
      this.price = 20;
-  }return this.price = this.price + (1.00 * this.addDiffMeats.length);
+  }return this.price = this.price + (.50 * this.addDiffMeats.length);
 }
 
 Adobo.prototype.spaces = function() {
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
      var adobo = new Adobo(adoboSize, adoboAddDiffMeats);
      var adoboPrice = adoboSize.cost().toFixed(2);
-     $("#userOutput").text("You have ordered a " + adoboSize.size + " adobo with " + personalPizza.toppings + " for $" + pizzaPrice + " .");
+     $("#userOutput").text("You have ordered a " + personalAdobo.size + " adobo with " + personalAdobo.addDiffMeats + " for $" + adoboPrice + " .");
      console.log(adobo);
   });
 });

@@ -17,10 +17,16 @@
         <h1 class="lettering">Virlie's Adobo</h1>
         <img src="images/chickenAdobo.jpg" alt="chicken adobo">
       </div>
+    </div>
+    <div class="form-group" id="welcome">
+      <div class="row">
+        <br>
+        <br>
+        <h4>Welcome to Suzy's Pizza Pie.</h4>
+      </div>
       <div>
           <p>We have been serving delicious Filipino Adobo creations with my grandmother's secret recipe since 1960.  All of our adobos are cooked with our signature blend of secret spices.  If you would like to enjoy different kinds of meat, and or seasonings with your rice, please add any of our delectible choices for an additional dollar.</p>
-      </div>
-      <div class="form-group">
+
         <form id="adoboOrder" action="index.html" method="post">
         <label for="name">Choose the size of your Adobo:</label>
         <select id="adoboSize" class="form-control">
@@ -35,14 +41,27 @@
             <input type="checkbox" name="addDiffMeats" value="chicken">Chicken<br>
             <input type="checkbox" name="addDiffMeats" value="tofu">Tokwa<br>
             <input type="checkbox" name="addDiffMeats" value="fish">Isda<br>
-              <input type="checkbox" name="addDiffMeats" value="ginger">Ginger<br>
-              <input type="checkbox" name="addDiffMeats" value="meat">Extra Meat<br>
-              <input type="checkbox" name="addDiffMeats" value="Pineapple">Pineapples<br>
-              <input type="checkbox" name="addDiffMeats" value="chilis">Green Chilis<br>
-              <input type="checkbox" name="addDiffMeats" value="tomatoes">Cherry Tomatoes<br>
-              <input type="checkbox" name="addDiffMeats" value="mushroom">Mushroom<br>
-              <input type="checkbox" name="addDiffMeats" value="bokchoy">Chinese Bokchoy<br>
-            </form>
-            <button type="submit" name="button" id="order">Order</button>
+            <input type="checkbox" name="addDiffMeats" value="ginger">Ginger<br>
+            <input type="checkbox" name="addDiffMeats" value="meat">Extra Meat<br>
+            <input type="checkbox" name="addDiffMeats" value="Pineapple">Pineapples<br>
+            <input type="checkbox" name="addDiffMeats" value="chilis">Green Chilis<br>
+            <input type="checkbox" name="addDiffMeats" value="tomatoes">Cherry Tomatoes<br>
+            <input type="checkbox" name="addDiffMeats" value="mushroom">Mushroom<br>
+            <input type="checkbox" name="addDiffMeats" value="bokchoy">Chinese Bokchoy<br>
+          </form>
+          <button type="submit" name="button" id="order">Order</button>
           </form>
         </form>
+        <br>
+      <br>
+      <h4>Your choice of adobo is:</h4>
+      <br>
+      <div class="row">
+        <div class="col-md-5">
+          <p id="userOutput"></p>
+        </div>
+      </div>
+     </div>
+   </div>
+  </body>
+</html>
