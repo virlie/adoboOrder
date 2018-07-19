@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>PizzaTime</title>
+    <title>AdoboTime</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -19,29 +19,29 @@
       </div>
       <div>
           <p>We have been serving delicious Filipino Adobo creations with my grandmother's secret recipe since 1960.  All of our adobos are cooked with our signature blend of secret spices.  If you would like to enjoy different kinds of meat, and or seasonings with your rice, please add any of our delectible choices for an additional dollar.</p>
-        </div>
-        <div class="form-group">
-          <form id="adoboOrder" action="index.html" method="post">
-          <label for="name">Choose the size of your Adobo:</label>
-          <select id="pizzaSize" class="form-control">
-            <option  value="small">Small Order 16 oz</option>
-            <option  value="medium">Medium Order 30 oz</option>
-            <option  value="large">Large 50 oz</option>
-          </select>
+      </div>
+      <div class="form-group">
+        <form id="adoboOrder" action="index.html" method="post">
+        <label for="name">Choose the size of your Adobo:</label>
+        <select id="adoboSize" class="form-control">
+          <option  value="small">Small Order 16 oz</option>
+          <option  value="medium">Medium Order 30 oz</option>
+          <option  value="large">Large 50 oz</option>
+        </select>
         </div>
         <div class="form-control">
           <form>
-            <input type="checkbox" name="meatOption" value="pork">Pork<br>
-            <input type="checkbox" name="meatOption" value="chicken">Chicken<br>
-            <input type="checkbox" name="meatOption" value="tofu">Tokwa<br>
-            <input type="checkbox" name="meatOption" value="fish">Isda<br>
-              <input type="checkbox" name="adoboOption" value="ginger">Ginger<br>
-              <input type="checkbox" name="adoboOption" value="meat">Extra Meat<br>
-              <input type="checkbox" name="adoboOption" value="Pineapple">Pineapples<br>
-              <input type="checkbox" name="adoboOption" value="chilis">Green Chilis<br>
-              <input type="checkbox" name="adoboOption" value="tomatoes">Cherry Tomatoes<br>
-              <input type="checkbox" name="adoboOption" value="mushroom">Mushroom<br>
-              <input type="checkbox" name="adoboOption" value="bokchoy">Chinese Bokchoy<br>
+            <input type="checkbox" name="addDiffMeats" value="pork">Pork<br>
+            <input type="checkbox" name="addDiffMeats" value="chicken">Chicken<br>
+            <input type="checkbox" name="addDiffMeats" value="tofu">Tokwa<br>
+            <input type="checkbox" name="addDiffMeats" value="fish">Isda<br>
+              <input type="checkbox" name="addDiffMeats" value="ginger">Ginger<br>
+              <input type="checkbox" name="addDiffMeats" value="meat">Extra Meat<br>
+              <input type="checkbox" name="addDiffMeats" value="Pineapple">Pineapples<br>
+              <input type="checkbox" name="addDiffMeats" value="chilis">Green Chilis<br>
+              <input type="checkbox" name="addDiffMeats" value="tomatoes">Cherry Tomatoes<br>
+              <input type="checkbox" name="addDiffMeats" value="mushroom">Mushroom<br>
+              <input type="checkbox" name="addDiffMeats" value="bokchoy">Chinese Bokchoy<br>
             </form>
             <button type="submit" name="button" id="order">Order</button>
           </form>
