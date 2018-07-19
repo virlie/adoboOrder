@@ -1,60 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>AdoboTime</title>
+    <title>Virlie's-Pizza-Pie</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="jumbotron text-right" style="height: 400px;">
-        <h1 class="lettering">Virlie's Adobo</h1>
-        <img src="images/chickenAdobo.jpg" alt="chicken adobo">
+        <h1 class="lettering">Virlie's Pizza Pie</h1>
       </div>
-    </div>
-    <div class="form-group" id="welcome">
-      <div class="row">
-        <br>
-        <br>
-        <h4>Welcome to Suzy's Pizza Pie.</h4>
-      </div>
-      <div>
-          <p>We have been serving delicious Filipino Adobo creations with my grandmother's secret recipe since 1960.  All of our adobos are cooked with our signature blend of secret spices.  If you would like to enjoy different kinds of meat, and or seasonings with your rice, please add any of our delectible choices for an additional dollar.</p>
-
-        <form id="adoboOrder" action="index.html" method="post">
-        <label for="name">Choose the size of your Adobo:</label>
-        <select id="adoboSize" class="form-control">
-          <option  value="small">Small Order 16 oz</option>
-          <option  value="medium">Medium Order 30 oz</option>
-          <option  value="large">Large 50 oz</option>
-        </select>
+      <form class="form-group" id="welcome">
+        <div class="row">
+          <br>
+          <br>
+          <h4>Welcome to Virlie's Pizza Pie.</h4>
         </div>
-        <div class="form-control">
-          <form>
-            <input type="checkbox" name="addDiffMeats" value="pork">Pork<br>
-            <input type="checkbox" name="addDiffMeats" value="chicken">Chicken<br>
-            <input type="checkbox" name="addDiffMeats" value="tofu">Tokwa<br>
-            <input type="checkbox" name="addDiffMeats" value="fish">Isda<br>
-            <input type="checkbox" name="addDiffMeats" value="ginger">Ginger<br>
-            <input type="checkbox" name="addDiffMeats" value="meat">Extra Meat<br>
-            <input type="checkbox" name="addDiffMeats" value="Pineapple">Pineapples<br>
-            <input type="checkbox" name="addDiffMeats" value="chilis">Green Chilis<br>
-            <input type="checkbox" name="addDiffMeats" value="tomatoes">Cherry Tomatoes<br>
-            <input type="checkbox" name="addDiffMeats" value="mushroom">Mushroom<br>
-            <input type="checkbox" name="addDiffMeats" value="bokchoy">Chinese Bokchoy<br>
+          <div>
+            <p>We have been serving delicious pizza creations with my grandmother's secret recipe since 1959.  All of our pizzas are baked with our signature blend of three cheeses.  If you would like to enjoy more toppings on your pie, please add any of our delectible toppings for an additional 50 cents.</p>
+          </div>
+          <div class="form-group">
+            <form id="pizzaOrder" action="index.html" method="post">
+            <label for="name">Choose the size of your pizza pie:</label>
+            <select id="pizzaSize" class="form-control">
+              <option  value="small">Small 12 inches</option>
+              <option  value="medium">Medium 15 inches</option>
+              <option  value="large">Large 20 inches</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <form>
+              <input type="checkbox" name="pizzaTopping" value="pepperoni">Pepperoni<br>
+              <input type="checkbox" name="pizzaTopping" value="mushrooms">Mushrooms<br>
+              <input type="checkbox" name="pizzaTopping" value="onions">Onions<br>
+              <input type="checkbox" name="pizzaTopping" value="sausage">Sausage<br>
+              <input type="checkbox" name="pizzaTopping" value="bacon">Bacon<br>
+              <input type="checkbox" name="pizzaTopping" value="cheese">Extra Cheese<br>
+              <input type="checkbox" name="pizzaTopping" value="olives">Black Olives<br>
+              <input type="checkbox" name="pizzaTopping" value="peppers">Green Peppers<br>
+              <input type="checkbox" name="pizzaTopping" value="tomatoes">Cherry Tomatoes<br>
+              <input type="checkbox" name="pizzaTopping" value="pineapple">Pineapple<br>
+              <input type="checkbox" name="pizzaTopping" value="spinach">Spinach<br>
+            </form>
+            <button type="submit" name="button" id="order">Order</button>
           </form>
-          <button type="submit" name="button" id="order">Order</button>
-          </form>
-        </form>
-        <br>
+      </form>
       <br>
-      <h4>Your choice of adobo is:</h4>
+      <br>
+      <h4>Your choice of pizza is:</h4>
       <br>
       <div class="row">
         <div class="col-md-5">

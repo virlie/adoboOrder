@@ -1,27 +1,27 @@
 // NOTE: Begins Business Logic.
 
-function adobo(size,addDiffMeats) {
-  this.adoboSize = size;
-  this.personalAdobo = personalAdobo;
+function Pizza(size,toppings) {
+  this.size = size;
+  this.toppings = toppings;
   }
 
-adobo.prototype.cost = function() {
+Pizza.prototype.cost = function() {
   if (this.size === "small") {
      this.price = 10;
   }else if (this.size === "medium") {
      this.price = 15;
   }else {
      this.price = 20;
-  }return this.price = this.price + (.50 * this.addDiffMeats.length);
+  }return this.price = this.price + (.50 * this.toppings.length);
 }
 
-Adobo.prototype.spaces = function() {
-  var spacedAddDiffMeats;
-  if (this.addDiffMeats.includes(" ") === false) {
-    this.addDiffMeats.forEach(function(addDiffMeat){
-      spacedAddDiffMeats = this.addDiffMeats + " ";
+Pizza.prototype.spaces = function() {
+  var spacedToppings;
+  if (this.toppings.includes(" ") === false) {
+    this.toppings.forEach(function(topping){
+      spacedToppings = this.toppings + " ";
     });
-  }; return spacedAddDiffMeats;
+  }; return spacedToppings;
 };
 
 // NOTE: Begins User Interface Logic.
@@ -30,16 +30,16 @@ $(document).ready(function(){
   $("#welcome").submit(function(event){
     event.preventDefault();
 
-     var adoboSize = $("#adoboSize").val();
-     var adoboAddDiffMeats = [];
+     var pizzaSize = $("#pizzaSize").val();
+     var personalPizzaToppings = [];
 
-    $("input:checkbox[name=addDiffMeats]:checked").each(function(){
-      adoboAddDiffMeats.push($(this).val());
+    $("input:checkbox[name=pizzaTopping]:checked").each(function(){
+      personalPizzaToppings.push($(this).val());
     });
 
-     var adobo = new Adobo(adoboSize, adoboAddDiffMeats);
-     var adoboPrice = adoboSize.cost().toFixed(2);
-     $("#userOutput").text("You have ordered a " + personalAdobo.size + " adobo with " + personalAdobo.addDiffMeats + " for $" + adoboPrice + " .");
-     console.log(adobo);
+     var personalPizza = new Pizza(pizzaSize, personalPizzaToppings);
+     var pizzaPrice = personalPizza.cost().toFixed(2);
+     $("#userOutput").text("You have ordered a " + personalPizza.size + " pizza with " + personalPizza.toppings + " for $" + pizzaPrice + " .");
+     console.log(personalPizza);
   });
 });
